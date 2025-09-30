@@ -3,28 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/rxq6knq.css">
     <link href ="styles.css" rel="stylesheet">
     <title>Document</title>
+    <style>
+        
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+ .container {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: nowrap;     
+      overflow-x: auto;       
+     padding: 16px;
+    }
+
+ .cd-block, .text {
+    flex: 0 0 auto;        
+    min-width: max-content;
+    }
+
+audio, iframe {
+    width: 600px;          
+    max-width: 600px;
+    display: block; margin-top: 10px;
+  }
+
+.cd {
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      display: block;
+      animation: spin 18s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+</style>
 </head>
 <body>
     <h1>Chapter 3: A Love Letter <br></h1>
 
-    <p> <br> </p>
+    <p><br></p>
+    <img src="images/old love 2.jpg" class="center-img">
+    <p><br></p>
     <p>I remember you, your face radiant like a puppy’s smile, bright as sunshine, yet touched with the tender sadness of the moon.</p>
     <p>When I looked into your eyes, I couldn’t hold my gaze for long. I was afraid you'd see through me, afraid my own vulnerability would bleed through. Afraid that I’d see a shining star in front of me and hope for it. I was so terrified of falling in love, even though love is the one gift I’ve always prayed God would someday give me.</p>
-    <p>You were the kind of person I couldn't label. A universe in nicknames, yet no single word could quite capture the way you fit.</p>
-    <p>With you, the world felt smaller, as if only two of us existed. I didn't notice others the way I usually did.</p>
+    <p>You were the kind of person I couldn't label. A universe in nicknames, but no single word could quite capture the way you fit.</p>
+    <p>With you, the world felt smaller, like only two of us existed. I didn't notice others the way I usually did.</p>
     <p>And for the first time in a long time, I felt happy, unexpectedly. Quieter, steadier, like I had found something I didn’t know I was searching for.</p>
-    <p>It wasn't love at first sight. I fell for you, little by little without realizing, but so quickly it felt like forever has been passed between us</p>
+    <p>It wasn't love at first sight. I fell for you, little by little without realizing, but so quickly it felt like forever has been passed between us.</p>
     <p>Sometimes I disappeared into myself, forgetting who I was outside your gravity. As much as I longed to love, my body resisted, guarding me from the pain I feared was coming.</p>
     <p>I pushed people away without meaning to. But I always hoped you’d return—or that the universe would somehow bring us back to each other, the way it did for a while.</p>
-    <p>Something in me pulled so tight and tangled, and in the end, even closeness turned into distance.</p>
-    <p>You're not here anymore. And that absence doesn't crash, or explode, but it dwells.</p>
-    <p>It breathes through everything, like a melody that won't fade, like a story retold long after it should have ended</p>
-    <p>If I could say anything now, it wouldn’t be grand.<br><br>
-       Just this:<br><br>
-       I miss you. Even when I shouldn’t. Even when I try not to. You were here and gone in the same breath. Real and unreachable at the same time. <br> And wherever you are, I hope something reminds you of me—gently.</p>
-    <img src="images/body.jpg" width="450"> 
+    <p>Something in me pulled so tight and so tangled, and in the end, even closeness turned into distance.</p>
+    <p>You're not here anymore. And that absence doesn't crash, or explode, but it dwells. It breathes through everything, like a melody that won't disappear, like a story retold long after it should have ended.</p>
+    
+    <div class="container">
+    <div class="cd-block">
+     <img src="images/old love 2.jpg" class="cd">
+
+     <audio controls>
+    <source src="audio/my light yk.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+    </audio>
+  </div>
+    <div class="text">
+    <p class="imissyou" style="margin:0;"><br><br>
+       I miss you. <br>Even when I shouldn’t. Even when I try not to. <br> You were here and gone in the same breath. <br> Real and unreachable at the same time. <br> But wherever you are, I hope something reminds you of me, gently.</p>
+    </div>
+  </div>
     <video src="videos/movie.MOV" width="1000" controls style="display:block; margin:auto;"></video>
     <a href="../index.html">Back to home</a>
 </body>

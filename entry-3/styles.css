@@ -5,33 +5,13 @@ h1{
 }
 
 p{
-    font-family: "Helvetica";
+    font-family: "garamond";
     font-size: 20px;
 }
 
-.qa{
-    color:red;
+.imissyou{
+font-family: "pragmatapro-fraktur", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 20px;
 }
-
-#q{
-    font-size: 23px;
-}
-
-#a{
-    font-family: sloop scriptone;
-    font-size: 35px;
-}
-
-.i-remember{
-    font-family: helvetica;
-    font-variant: small-caps;
-    font-size: 25px;
-}
-
-<style>
-.right-align {
-  display: block;
-  margin-left: auto;
-  margin-right: 0;
-}
-</style>
