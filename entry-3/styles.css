@@ -4,7 +4,59 @@ h1{
     font-size: 55px;
 }
 
-p{
-    font-family: "garamond";
-    font-size: 20px;
+
+:root{
+  --paper:#f7f1e5; --ink:#222; --muted:#6b6b6b; --rule:#e3ddd2;
+  --date:#000B58; --hi:#c6f36b;
 }
+
+/* print sizing (optional) */
+@page { size: 8.5in 11in; margin: 1.1in; }
+@media print { body{background:none;} .sheet{box-shadow:none;} }
+
+html,body{margin:0;padding:0;}
+body{
+  background:#efece6;
+  font:14.5px/1.8 "Times New Roman",Georgia,serif;
+  color:var(--ink);
+}
+
+.sheet{
+  width:8.5in; min-height:11in; margin:40px auto;
+  background:
+    radial-gradient(1200px 800px at 30% 10%, rgba(0,0,0,.06), transparent 60%),
+    radial-gradient(1000px 700px at 70% 120%, rgba(0,0,0,.05), transparent 60%),
+    var(--paper);
+  box-shadow:0 16px 40px rgba(0,0,0,.18);
+}
+.content{padding:1.1in;}
+
+.topline{
+  font:12px/1 "Times New Roman",serif; letter-spacing:.08em; color:var(--muted);
+  display:flex; justify-content:space-between; margin-bottom:18px;
+}
+.mast{
+  text-align:center;
+  font:700 36px/1 "Didot","Bodoni 72","Times New Roman",serif;
+  letter-spacing:.35em; margin:8px 0 2px;
+}
+.address{ text-align:center; font-size:11px; color:var(--muted); letter-spacing:.12em; }
+.hairline{height:1px; background:var(--rule); margin:18px 0 24px;}
+
+.date{
+  text-align:center; color:var(--date);
+  font:700 13px/1.2 "Courier New",Courier,monospace; letter-spacing:.06em;
+  margin-bottom:22px;
+}
+
+p{margin:0 0 14px;}
+.salutation,.closing{margin:18px 0 12px;}
+.type{text-shadow:0 .3px 0 rgba(0,0,0,.15);}  
+
+.hl{
+  background:linear-gradient(transparent 45%, var(--hi) 45% 88%, transparent 88%);
+  padding:0 .08em;
+}
+.sig{ margin-top:12px; width:180px; height:22px; border-bottom:3px solid #ca0013; transform:rotate(-2deg); }
+.name{ margin-top:8px; font-weight:600; letter-spacing:.04em; }
+.footer{ margin-top:40px; font-size:12px; color:var(--muted); line-height:1.6; }
