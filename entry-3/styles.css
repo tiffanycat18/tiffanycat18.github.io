@@ -1,10 +1,18 @@
-h1{
-    color:red;
-    font-family: "Helvetica";
-    font-size: 55px;
-    text-align: center;
+ @font-face {
+  font-family: 'EditorialNew';
+  src: url('editorial-new/PPEditorialNew-Ultralight-BF644b21500d0c0.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+ h1{
+    color: black;
+    font-family: "adobe-handwriting-ernie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    text-align: center;
+}
 
 :root{
   --paper:#f7f1e5; --ink:#222; --muted:#6b6b6b; --rule:#e3ddd2;
