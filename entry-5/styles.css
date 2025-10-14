@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Demather';
+  src: url('Demather.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Beauty';
+  src: url('BeautyDemo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1{
     color:red;
     font-family: "Helvetica";
@@ -6,4 +19,9 @@ h1{
 
 p{
     font-size: 23px;
+}
+
+.my-paragraph {
+    font-size: 40px;
+    font-family: "Beauty";
 }
