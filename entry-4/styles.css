@@ -194,11 +194,11 @@ p{
   .page.right::after{ left:-7px; transform:none; }
 
   /* themes */
-  .yeu   { background-color:#fbeaea; color:red; }
-  .thuong{ background-color:#f3f7f3; color:#00abff; }
+  .yeu   { background-color:#ffdbf5; color:red; }
+  .thuong{ background-color:#9ee7ff; color:#ffffff; }
 
   .thuongheading{
-    color: #00abff;
+    color: #ffffff;
   }
 
   .yeuheading{
