@@ -46,7 +46,7 @@ p{
   .book {
     width:420px;
     height:600px;
-    background: #ff2e00;
+    background: #ff2f00;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     border:1px solid #e5e5e5;
     display:flex;
@@ -111,8 +111,8 @@ p{
   }
 
    :root{
-    --book-w: 900px;
-    --book-h: 580px;
+    --book-w: 1200px;
+    --book-h: 620px;
     --radius: 16px;
     --paper: #fbfaf8;
     --table: #d7d6d3;
@@ -145,15 +145,6 @@ p{
   .edge.left  { left:-12px;  border-radius:12px 0 0 12px; }
   .edge.right { right:-12px; border-radius:0 12px 12px 0; }
 
-  /* ====== BINDER PIECES (these make the rings visible) ====== */
-  /* metal rail under the rings */
-  .spine-rail{
-    position:absolute; left:50%; top:0; transform:translateX(-50%);
-    width:40px; height:100%; z-index:40;
-    background: red;
-    box-shadow: inset 0 0 12px rgba(0,0,0,.25);
-  }
-
   /* pages */
   .page{
     position:relative; flex:1; padding:60px 50px; box-sizing:border-box;
@@ -176,7 +167,7 @@ p{
     border-bottom-right-radius: calc(var(--radius) - 2px);
   }
 
-  /* punch holes (pure CSS) — align with rings */
+  /* punch holes — align with rings */
   .page.left::after,
   .page.right::after{
     content:""; position:absolute; top:6%; bottom:6%;
@@ -194,8 +185,8 @@ p{
   .page.right::after{ left:-7px; transform:none; }
 
   /* themes */
-  .yeu   { background-color:#ffdbf5; color:red; }
-  .thuong{ background-color:#9ee7ff; color:#ffffff; }
+  .yeu   { background-color:#ffffff; color:red; }
+  .thuong{ background-color:#c4eefc; color:#ffffff; }
 
   .thuongheading{
     color: #ffffff;
@@ -208,7 +199,3 @@ p{
   .yeuthuongheading{ font-size:4rem; line-height:1.1; margin:0 0 16px; letter-spacing:.04em; text-transform:uppercase; }
   .yeuthuong{ font-size:1.4rem; line-height:1.7; max-width:90%; margin:.6em 0; }
   .footer{ font-size:.9rem; letter-spacing:.08em; text-transform:uppercase; }
-
-  @media (max-width: 1500px){
-    :root{ --book-w: 92vw; --book-h: 45vw; }
-  }
