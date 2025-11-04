@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Soul Handwriting';
-  src: url('soul-handwriting.ttf') format('truetype');
+  font-family: 'Hopeless Romantic';
+  src: url('HopelessRomanticSociety.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 h1{
     color:red;
-    font-family: "Helvetica";
-    font-size: 55px;
+    font-family: "Hopeless Romantic";
+    font-size: 89px;
 }
 
 p{
