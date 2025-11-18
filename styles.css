@@ -9,32 +9,73 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.poster-container {
-  display: flex; /* Arrange items in a row */
-  flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
-  overflow-x: auto; /* Add a horizontal scrollbar when content overflows */
-  width: 100%; /* Set the width of the container */
-  margin: 0 auto; /* Center the container if desired */
-  padding-bottom: 15px; /* Add some space for the scrollbar */
-}
-
-.poster {
-  flex: 0 0 auto; /* Prevent items from growing or shrinking */
-  width: 300px; /* Set a width for each poster */
-  height: 400px; /* Set a height for each poster */
-  margin-right: -30px; /* Add some space between posters */
-  /* Add any other styling for your posters */
-}
-
-.poster img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the image covers the area */
-}
-
 a{
     font-family: "Magnus";
     color:black;
     font-size: 80px;
     font-weight: 600;
+}
+
+/* Intro + outro to guarantee scroll room */
+.lead {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #c9c9c9;
+  padding: 2rem;
+  text-align: center;
+}
+.outro { height: 40vh; }
+
+/* Scene sizing */
+.stacker {
+  /* JS reads this count and may override; set a safe default: */
+  --items: 16;
+  --gap: 80px;     /* leftward offset between final stacked cards */
+  --startX: 45vw;  /* where they begin from the right */
+  /* Make the section MUCH taller than 100vh so we always have progress */
+  height: calc(100vh + var(--items) * 70vh);
+  position: relative;
+}
+
+/* Sticky viewport pins the stage while scrolling the section */
+.stacker__viewport {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+/* Stage where posters sit */
+.stacker__stage {
+  position: relative;
+  width: min(92vw, 1120px);
+  height: min(92vh, 760px);
+}
+
+/* Poster cards */
+.poster {
+  position: absolute;
+  top: 50%;
+  left: -4.5cm;
+  width: clamp(540px, 24vw, 320px);
+  height: clamp(720px, 36vw, 420px);
+  transform: translate(-50%, -50%) translateX(var(--tx, 0)) scale(var(--sc, 1));
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,.45), 0 2px 8px rgba(0,0,0,.25);
+  will-change: transform, opacity;
+  opacity: var(--op, 1);
+}
+.poster img, .poster video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Nice glow on the most “active” one */
+.poster.is-active {
+  box-shadow: 0 18px 40px rgba(0,0,0,.6), 0 4px 16px rgba(0,0,0,.35);
 }
