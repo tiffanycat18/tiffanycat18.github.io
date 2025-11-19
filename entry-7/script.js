@@ -1,11 +1,8 @@
-// TARGET ELEMENTS
+// TARGET ELEMENT
 loveLine = document.getElementById("love-line")
-
 
 // ALL 100 LOVE LINES
 loveLines = [
-
-  // first 60
   "the way someone remembers your order without asking.",
   "silence that feels like a warm blanket, not a wall.",
   "choosing someone even when you’re tired.",
@@ -65,8 +62,6 @@ loveLines = [
   "saving a piece of the day for someone.",
   "the courage to try again.",
   "believing in each other’s futures.",
-
-  // +40 more
   "someone waiting for you to catch up.",
   "remembering the way they like their coffee.",
   "not having to pretend.",
@@ -106,10 +101,10 @@ loveLines = [
   "missing them before they leave.",
   "saving the last seat for someone.",
   "seeing the best in them on bad days.",
-  "a soft place to rest your heart."
-  "when i see more than 400 die every year while waiting for an organ donate, I just know that I will give mine to you if you need one. <br> <br> You're really special if you get this on the first try"
+  "a soft place to rest your heart.",
+  "when I saw that subway ad saying more than 400 people in New York die waiting for an organ, I don’t know why, but I thought of you. I just knew that if you ever needed mine, I’d give it to you. <br><br>P.S. If you get this on the first try, you’re really special. Not everyone is meant to."
 ]
 
 // RANDOM LINE
 lineIndex = Math.floor(Math.random() * loveLines.length)
-loveLine.innerText = loveLines[lineIndex]
+loveLine.innerHTML = loveLines[lineIndex]
