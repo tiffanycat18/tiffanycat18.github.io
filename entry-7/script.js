@@ -107,6 +107,7 @@ loveLines = [
   "saving the last seat for someone.",
   "seeing the best in them on bad days.",
   "a soft place to rest your heart."
+  "when i see more than 400 die every year while waiting for an organ donate, I just know that I will give mine to you if you need one. <br> <br> You're really special if you get this on the first try"
 ]
 
 // RANDOM LINE
