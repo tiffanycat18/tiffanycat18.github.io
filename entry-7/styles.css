@@ -12,13 +12,88 @@
   font-style: normal;
 }
 
-h1{
-    color:red;
-    font-family: "Hopeless Romantic";
-    font-size: 150px;
+@font-face {
+  font-family: 'Vogue';
+  src: url('Vogue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-p{
-    font-size: 30px;
-    font-family: "Soul Handwriting";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #c7322b;   /* FULL RED PAGE */
+  font-family: "Vogue";     /* your custom font */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fdf7f2;
+}
+
+/* content container (only for spacing) */
+.love-page {
+  text-align: center;
+  padding: 60px 40px;
+  width: 100%;
+}
+
+/* tiny texture on whole red page */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0);
+  background-size: 4px 4px;
+  opacity: 0.35;
+}
+
+/* top text */
+.top-label {
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  font-size: 15px;
+  opacity: 0.85;
+  margin-bottom: 14px;
+}
+
+.top-title {
+  font-family: "Ballet";
+  font-size: 35px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  letter-spacing: 0.08em;
+}
+
+.top-sub {
+  font-family: "PS Times";
+  max-width: 560px;
+  margin: 0 auto 40px;
+  font-size: 15px;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+/* random line section */
+#love-intro {
+  font-family: "Vogue";
+  font-size: 45px;
+  margin-bottom: 8px;
+}
+
+#love-line {
+  font-family: "Soul Handwriting";
+  font-size: 40px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* mobile */
+@media (max-width: 700px) {
+  .top-title { font-size: 28px; }
+  .top-sub { font-size: 16px; }
+  #love-line { font-size: 22px; }
 }
