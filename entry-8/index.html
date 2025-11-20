@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/rxq6knq.css">
+    <link href ="styles.css" rel="stylesheet">
+    <title>Document</title>
+<style>
+</style>
+
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <p1>The Archive of Us ,</p1>
+    <p class="subtitle">Love, Recorded</p>
+    <p>If You Hear This, I Miss You</p>
+
+    <div class="meta">
+      <p>EXHIBITION</p>
+      <p>Curated by Tiffany Tran</p>
+    </div>
+  </div>
+<p><br><br><br></p>
+  <div class="cassette-label">
+    <div class="label-top">Side A · Love Letter</div>
+    <div id="trackName" class="label-title">Love Letter</div>
+    </div>
+  </div>
+
+    <!-- ACTUAL CASSETTE IMAGE + SPINNING REELS -->
+<div class="cassette-visual">
+    <img src="images/cassette tape.png" class="cassette-img">
+    <img src="images/cassette reel.png" class="reel-img left-reel">
+
+    <div class="tape-bar">
+      <div id="progressBar" class="tape-progress"></div>
+    </div>
+</div>
+
+ <div class="label-line"></div>
+    <div class="label-times">
+      <span id="currentTime">0:00</span>
+      <span>♥</span>
+      <span id="duration">0:00</span>
+    </div>
+  </div>
+
+
+  <div class="now-playing">
+    <p>NOW PLAYING</p>
+    <p2 id="trackDisplay">Love Letter</p2>
+  </div>
+  <p><br></p>
+
+  <div class="upload-methods">
+    <button id="chooseFileBtn" class="tab active">ARCHIVE A MEMORY</button>
+    <button id="chooseUrlBtn" class="tab">LINK A MEMORY FROM ELSEWHERE</button>
+  </div>
+
+  <!-- FILE UPLOAD -->
+  <div id="fileSection" class="upload-box">
+    <button id="openFilePicker" class="upload-btn">Upload a Memory</button>
+    <input id="fileInput" type="file" accept="audio/*" hidden>
+    <p>Select an audio file from your device.</p>
+  </div>
+
+  <!-- URL INPUT -->
+  <div id="urlSection" class="upload-box hidden">
+    <input id="urlInput" type="text" placeholder="https://example.com/song.mp3" class="url-field">
+    <button id="loadUrlBtn" class="upload-btn">Begin the Memory</button>
+    <p>Paste a direct link to your audio file.</p>
+  </div>
+
+  <!-- CONTROLS -->
+  <div class="controls">
+    <button id="rewindBtn" class="ctrl">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="11 19 2 12 11 5 11 19"/>
+        <polygon points="22 19 13 12 22 5 22 19"/>
+      </svg>
+    </button>
+
+    <!-- play button now has BOTH icons inside -->
+    <button id="playBtn" class="ctrl play">
+      <svg class="icon-play" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="5 3 19 12 5 21 5 3"/>
+      </svg>
+      <svg class="icon-pause" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+        <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+      </svg>
+    </button>
+
+    <button id="stopBtn" class="ctrl">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <rect x="6" y="6" width="12" height="12" rx="1"></rect>
+      </svg>
+    </button>
+
+    <button id="forwardBtn" class="ctrl">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="13 19 22 12 13 5 13 19"/>
+        <polygon points="2 19 11 12 2 5 2 19"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="quote">
+    <p>"I miss the way you looked at me."</p>
+    <p class="credit">— The Archive of Us</p>
+  </div>
+
+  <audio id="audio"></audio>
+</div>
+
+  
+<script src="script.js"></script>
+</body>
+</html>
