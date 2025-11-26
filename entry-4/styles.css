@@ -43,35 +43,6 @@ p{
     font-size: 23px;
 }
 
-  .book {
-    width:420px;
-    height:600px;
-    background: #ff2f00;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    border:1px solid #e5e5e5;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    padding:60px 40px;
-    text-align:center;
-    align-items: center;
-  }
-
-  .title {
-    font-family: "Vogue";
-    font-size:9.5rem;
-    letter-spacing:2px;
-    line-height:1.05;
-  }
-
-  .author {
-    font-family: "Demanther";
-    font-size:4rem;
-    letter-spacing:1px;
-    margin-top:20px;
-  }
-
-
   .book2 {
     width: 460px;
     height: 600px;                 /* near-square, realistic proportion */
