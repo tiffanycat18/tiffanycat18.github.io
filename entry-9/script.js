@@ -110,7 +110,7 @@ const squares = [
     word: "clarity",
     line: "I’d tell you what I feel.",
     media:
-      "",
+      "videos/clarity.mp4",
     x1: 41.6,
     y1: 26.5,
     x2: 56.2,
@@ -120,7 +120,7 @@ const squares = [
     word: "courage",
     line: "I’d let you in, slowly.",
     media:
-      "",
+      "videos/courage.mp4",
     x1: 56.35,
     y1: 26,
     x2: 71.7,
@@ -162,7 +162,7 @@ const squares = [
     word: "return",
     line: "I’d come back even when scared.",
     media:
-      "",
+      "videos/return1.mp4",
     x1: 13.5,
     y1: 53.5,
     x2: 26.6,
@@ -192,7 +192,7 @@ const squares = [
     word: "safety",
     line: "I’d build home, not chaos.",
     media:
-      "",
+      "videos/safety2.mp4",
     x1: 56.3,
     y1: 52.2,
     x2: 72.4,
@@ -202,7 +202,7 @@ const squares = [
     word: "depth",
     line: "I’d let us be more than surface.",
     media:
-      "",
+      "videos/depth.mp4",
     x1: 72.7,
     y1: 53,
     x2: 87.4,
@@ -264,7 +264,7 @@ const squares = [
     word: "grounding",
     line: "I’d stay here, not in the future tragedy.",
     media:
-      "",
+      "videos/grounding.mp4",
     x1: 57.1,
     y1: 75.5,
     x2: 72.2,
