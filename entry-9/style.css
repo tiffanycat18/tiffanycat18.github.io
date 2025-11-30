@@ -27,10 +27,6 @@
 
 body {
   min-height: 100vh;
-  background: 
-      linear-gradient(rgba(255, 255, 255, 0.413), rgb(255, 255, 255)),
-      url("images/ballet.jpg") no-repeat center center;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
