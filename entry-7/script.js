@@ -102,7 +102,7 @@ loveLines = [
   "saving the last seat for someone.",
   "seeing the best in them on bad days.",
   "a soft place to rest your heart.",
-  "when I saw that subway ad saying more than 400 people in New York die waiting for an organ, I don’t know why, but I thought of you. I just knew that if you ever needed mine, I’d give it to you. <br><br>P.S. If you get this on the first try, you’re really special. Not everyone is meant to."
+  "when I saw that subway ad saying more than 400 people in New York die waiting for an organ, I don’t know why, but I thought of you. I just knew that if you ever needed mine, I’d give it to you."
 ]
 
 // RANDOM LINE
