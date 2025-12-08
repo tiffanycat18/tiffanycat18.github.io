@@ -5,12 +5,26 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Ballet';
+  src: url('Ballet.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Soul Handwriting';
+  src: url('soul-handwriting.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
  h1{
     color: black;
-    font-family: "adobe-handwriting-ernie", sans-serif;
+    font-family: "Ballet";
     font-weight: 400;
     font-style: normal;
-    font-size: 90px;
+    font-size: 130px;
     text-align: center;
 }
 
@@ -26,7 +40,7 @@
 html,body{margin:0;padding:0;}
 body{
   background:#efece6;
-  font:14.5px/1.8 "Times New Roman",Georgia,serif;
+  font:18px/1.8 "Soul Handwriting";
   color:var(--ink);
 }
 
@@ -41,12 +55,12 @@ body{
 .content{padding:1.1in;}
 
 .topline{
-  font:12px/1 "Times New Roman",serif; letter-spacing:.08em; color:var(--muted);
+  font:12px/1 "Didot"; letter-spacing:.08em; color:var(--muted);
   display:flex; justify-content:space-between; margin-bottom:18px;
 }
 .mast{
   text-align:center;
-  font:700 36px/1 "Didot","Bodoni 72","Times New Roman",serif;
+  font:700 36px/1 "Didot";
   letter-spacing:.35em; margin:8px 0 2px;
 }
 .address{ text-align:center; font-size:11px; color:var(--muted); letter-spacing:.12em; }
