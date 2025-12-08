@@ -20,9 +20,11 @@
 }
 
 p{
-    font-size: 30px;
+    font-size: 38px;
     font-family: "Soul Handwriting";
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+    line-height: 60px;
 }
 
 .back-home {
@@ -42,20 +44,44 @@ p{
   opacity: 1;
 }
 
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2; /* behind everything */
+}
+
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  z-index: -1; /* above video, below content */
+}
+
+
 * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      background-color: rgb(255, 255, 255);
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
     body {
-      font-family: Didot;
-      color: #000000;
-    }
+  font-family: Didot;
+  color: #ffffff;
+  min-height: 100vh;
+  background-color: #000; /* fallback if video fails */
+  position: relative;
+}
+
 
     .header {
-      background: white;
       margin-top: 20px;
       margin-left: 50px;
       display: flex;
@@ -64,14 +90,13 @@ p{
     }
 
     .header h1 {
-      font-size: 270px;
+      font-size: 300px;
       font-weight: 400;
       font-family: "Ballet";
-      color: rgb(255, 0, 0);
+      color: rgb(255, 255, 255);
     }
 
     .gallery-container {
-      background: rgb(255, 255, 255);
       padding: 1px;
       border-radius: 8px;
       max-width: 1400px;
