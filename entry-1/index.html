@@ -7,24 +7,114 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>We Become Stories</h1>
+     <video id="bg-video" autoplay muted loop playsinline>
+    <source src="videos/movie.MOV" type="video/mp4" />
+    <!-- you can export your .MOV as .mp4 for better browser support -->
+  </video>
+  <div class="bg-overlay"></div>
 
-    <p> Expressing myself has never been easy. <br> For as long as I can remember, I have constantly tried to find a home in words. <br> It’s like trying to find my way through a maze of words that refuse to quiet, or sometimes, there are just no words at all. <br> Silence, as terrifying and scary as it might seem, carries such heaviness, bearing upon one's heart, making every breath become a struggle. <br> Like drowning, pressure keeps pulling you deeper and control vanishing like the last breath. <br> As you sink further, the cries within fade, choked in the darkness below, <br> until life and death are no longer controllable.  </p>
-    <img src="images/Rotten Fruit.jpg" width="400"> 
-    <img src="images/Past Lives 1 1.jpg" width="1000"> 
-    <p> I remember the endless fear of chasing perfection, a pursuit I believed held promises to happiness, but only found brief moments of satisfaction and a life that felt like one failure after another. <br> My obsession with perfection comes from the plain reality of knowing, <br> deep down, <br> that I am full of flaws and imperfections. <br> I fear that no one will love me for my insecurities, like my fears expose me completely, as fragile as glass.</p>
-    <img src="images/Past Lives.jpg" width="800">
-    <p> One of the deepest ironies of being human is our tendency to regret it only when the moment has permanently escaped us, <br> realizing too late that <br> life <br> itself <br> was just a momentary speck.</p>
-    <img src="images/inyeon.jpg" width="1200">
-    <p> I think of you as inyeon, the bond that drew our lives together, even if it was only for a brief moment. <br> With you, the world felt smaller, like fate had folded it so that it was just us. <br> I fell for you little by little, though fear kept me from holding on. <br> Now you are gone, but <br> the ache still dwells inside me, <br> soft as a song I can't turn off. <br> If inyeon is real, I hope the thread will lead me back to you, <br> just like it did <br> —someday.</p>
-    <img src="images/Past Lives 2.jpg" width="1300"> 
-    <h3>"Someday"</h3>
-    <img src="images/red ballet shoes.jpg" width="1500">
-    <p> <i> In the end, all I have are memories: moments I still ache for, my traumas, my melancholy, and the happy times I wish I could hold again. They stay with me, like pages I keep rereading. <br> Maybe that’s what it means to become stories: we live on in the hearts that remember us. <br> And I hope I’ll be remembered with love and admiration, even as I wrestle with whether I want remembrance or simply fear being forgotten, abandoned.</i> </p>
-    <h3 style="text-align:center;">
-    <br> If you could see your life from start to finish, <br> would you change things?
-    </h3>
-    <video src="videos/movie.MOV" width="1000" controls style="display:block; margin:auto;"></video>
-    <a href="../index.html">Back to home</a>
-</body>
-</html>
+  <!-- INTRO SCREEN -->
+  <div id="intro-screen" class="screen">
+    <div>
+      <h1>We Become Stories</h1>
+      <p>
+      </p>
+      <button class="btn" id="begin-story">Begin</button>
+    </div>
+  </div>
+
+  <!-- STORY SCREEN -->
+  <div id="story-screen" class="screen hidden">
+    <div class="story-inner">
+      <h2 class="story-title">We Become Stories</h2>
+
+      <!-- SLIDE 1 -->
+      <div class="slide active">
+        <p><br><br>
+          Expressing myself has never been easy.<br>
+          For as long as I can remember, I have constantly tried to find a home in words.<br>
+          It’s like trying to find my way through a maze of words that refuse to quiet, or sometimes, there are just no words at all.<br>
+          Silence, as terrifying and scary as it might seem, carries such heaviness, bearing upon one's heart, making every breath become a struggle.<br>
+          Like drowning, pressure keeps pulling you deeper and control vanishing like the last breath.<br>
+          As you sink further, the cries within fade, choked in the darkness below,<br>
+          until life and death are no longer controllable. <br><br><br><br>
+        </p>
+
+        <img src="images/Rotten Fruit.png" class="story-image" id="rotten-fruit" alt="Rotten Fruit">
+        <img src="images/Past Lives 1 1.jpg" class="story-image" alt="Past Lives 1">
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="slide">
+        <p><br><br>
+          I remember the endless fear of chasing perfection, a pursuit I believed held promises to happiness, but only found brief moments of satisfaction and a life that felt like one failure after another.<br>
+          My obsession with perfection comes from the plain reality of knowing,<br>
+          deep down,<br>
+          that I am full of flaws and imperfections.<br>
+          I fear that no one will love me for my insecurities, like my fears expose me completely, as fragile as glass. <br><br><br><br>
+        </p>
+
+        <img src="images/Past Lives.jpg" class="story-image" alt="Past Lives">
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="slide">
+        <p><br><br>
+          One of the deepest ironies of being human is our tendency to regret it only when the moment has permanently escaped us,<br>
+          realizing too late that<br>
+          life<br>
+          itself<br>
+          was just a momentary speck.<br><br>
+        </p>
+
+        <img src="images/inyeon.jpg" class="story-image" alt="Inyeon">
+
+        <p><br><br>
+          I think of you as inyeon, the bond that drew our lives together, even if it was only for a brief moment.<br>
+          With you, the world felt smaller, like fate had folded it so that it was just us.<br>
+          I fell for you little by little, though fear kept me from holding on.<br>
+          Now you are gone, but<br>
+          the ache still dwells inside me,<br>
+          soft as a song I can't turn off.<br>
+          If inyeon is real, I hope the thread will lead me back to you,<br>
+          just like it did<br>
+          — someday.<br><br>
+        </p>
+
+        <img src="images/Past Lives 2.jpg" class="story-image" alt="Past Lives 2">
+        <h3 style="font-family: 'Soul Handwriting'; font-size: 30px; text-align:center; margin-top: 10px;">
+          "Someday"<br><br>
+        </h3>
+      </div>
+
+      <!-- SLIDE 4) -->
+      <div class="slide">
+        <img src="images/red ballet shoes.jpg" class="story-image" alt="Red Ballet Shoes">
+
+        <p><br><br>
+          <i>
+          In the end, all I have are memories: moments I still ache for, my traumas, my melancholy, and the happy times I wish I could hold again. They stay with me, like pages I keep rereading.<br>
+          Maybe that’s what it means to become stories: we live on in the hearts that remember us.<br>
+          And I hope I’ll be remembered with love and admiration, even as I wrestle with whether I want remembrance or simply fear being forgotten, abandoned.
+          </i>
+        </p>
+
+        <h3 style="font-family: 'Soul Handwriting'; font-size: 30px; text-align:center;">
+          <br><br><br>
+          If you could see your life from start to finish,<br>
+          would you change things?
+        </h3>
+
+        <video src="videos/movie.MOV" class="story-image" id="story-video" controls></video>
+      </div>
+    </div>
+
+    <div class="story-nav">
+      <button class="btn" id="prev-slide">Back</button>
+      <div class="story-step" id="step-indicator">1 / 4</div>
+      <button class="btn" id="next-slide">Next</button>
+      <a href="../index.html" class="back-home">Back to home</a>
+
+      <script src="script.js"></script>
+    </div>
+  </div>
