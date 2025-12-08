@@ -48,7 +48,7 @@
 }
 
 h1{
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-family: "Ballet";
     font-weight: 400;
     font-size: 180px;
@@ -58,6 +58,7 @@ h1{
 p{
     font-size: 30px;
     font-family: "Didot";
+    color: white;
 }
 
 .didot {
@@ -117,3 +118,42 @@ p{
   #center {
     text-align: center;
   }
+
+  img {
+  display: block;
+  margin: 0 auto;
+}
+
+.back-home {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: "Ballet";
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.back-home:hover {
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
