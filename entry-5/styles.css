@@ -27,7 +27,7 @@
 h1{
     color:red;
     font-family: "Ballet";
-    font-size: 160px;
+    font-size: 169px;
     font-weight: 400;
 }
 
@@ -43,7 +43,7 @@ p{
 
 .stage {
   position: relative;
-  width: 600px;             
+  width: 800px;             
   aspect-ratio: 4 / 5;       
   margin: 40px auto;
   background: transparent;  
