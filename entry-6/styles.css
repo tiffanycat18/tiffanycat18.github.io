@@ -64,10 +64,10 @@ p{
     }
 
     .header h1 {
-      font-size: 150px;
+      font-size: 270px;
       font-weight: 400;
       font-family: "Ballet";
-      color: rgb(0, 0, 0);
+      color: rgb(255, 0, 0);
     }
 
     .gallery-container {
