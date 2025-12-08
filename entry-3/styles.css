@@ -24,9 +24,42 @@
     font-family: "Ballet";
     font-weight: 400;
     font-style: normal;
-    font-size: 130px;
+    font-size: 150px;
     text-align: center;
+    
 }
+
+.back-home {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: white;
+  text-decoration: none;
+  font-family: Didot, serif;
+  opacity: 0.7;
+  transition: 0.25s ease;
+}
+
+.back-home::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background: white;
+  transition: 0.25s ease;
+  margin-top: 4px;
+}
+
+.back-home:hover {
+  opacity: 1;
+}
+
+.back-home:hover::after {
+  width: 100%;
+}
+
 
 :root{
   --paper:#f7f1e5; --ink:#222; --muted:#6b6b6b; --rule:#e3ddd2;
