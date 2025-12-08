@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+a {
+  text-decoration: none;
+  color: inherit; /* keeps same color as your title */
+}
 
 body {
     background-color: rgb(255, 255, 255);
