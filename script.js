@@ -38,7 +38,7 @@ let ticking = false;
 function render() {
   ticking = false;
 
-  // Section progress (robust in CodePen iframe)
+  // Section progress
   const rect = stacker.getBoundingClientRect();
   const total = (rect.height - window.innerHeight) || 1;
   const g = clamp((-rect.top) / total);

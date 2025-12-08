@@ -59,6 +59,7 @@ p{
     font-size: 30px;
     font-family: "Didot";
     color: white;
+    margin-left: 50px;
 }
 
 .didot {
@@ -157,3 +158,42 @@ p{
   object-fit: cover;
   z-index: -1;
 }
+
+#bgAudio {
+  display: none;
+}
+
+/* minimal audio button */
+.audio-toggle {
+  position: fixed;          /* always visible */
+  bottom: 1.5rem;
+  right: 1.5rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  font-family: Ballet;
+  background: rgba(255, 255, 255, 0.7);
+  color: #969696;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 50;
+}
+
+.audio-toggle:hover {
+  background: rgba(0, 0, 0, 0.85);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* optional: smaller on mobile */
+@media (max-width: 600px) {
+  .audio-toggle {
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.7rem;
+    padding: 0.35rem 0.8rem;
+  }

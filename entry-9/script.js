@@ -357,7 +357,7 @@ div.style.height = (sq.y2 - sq.y1) * 1 + "%"; // 35% of original height
   });
 });
 
-// === Background audio logic ===
+// === Background audio ===
 window.addEventListener("DOMContentLoaded", function () {
   const audio = document.getElementById("bgAudio");
   const toggle = document.getElementById("audioToggle");
