@@ -69,3 +69,8 @@ p{
 .back-home:hover {
   opacity: 1;
 }
+
+img {
+    display: block;
+    margin: 0 auto;
+}
