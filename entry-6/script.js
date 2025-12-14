@@ -1,6 +1,8 @@
 // Sample book pages data - Replace these with your actual images
     const bookPages = [
       { img: 'Book/1.png' },
+      { img: 'Book/2.jpg' },
+      { img: 'Book/3.jpg' },
       { img: 'Book/5.png' },
       { img: 'Book/6.png' },
       { img: 'Book/7.png' },
@@ -116,7 +118,7 @@
 { img: 'Book/119.png' },
 { img: 'Book/120.png' },
 { img: 'Book/121.png' },
-{ img: 'Book/122.png' },
+{ img: 'Book/122.jpg' },
 { img: 'Book/123.png' },
 { img: 'Book/124.png' },
 { img: 'Book/125.png' },
